@@ -64,6 +64,13 @@
         </style>
     </head>
     <body>
+        <a href="{{ route('get.post') }}">sdsd</a>
+        <form action="/update" method="post" >
+            {{ csrf_field() }}
+            <input type="text" name="abc">
+            <input type="text"name="ten">
+            <input type="submit">    
+        </form>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -85,10 +92,10 @@
                 </div>
 
                 <div class="links">
-                    <p>Họ Và TÊN: Đoàn Tiến Đạt </p> 
-                    <p>Năm Sinh: 1998</p>
-                    <p>Trường : Đại học kinh doanh và công nghệ Hà Nội</p>
-                    <p>mục tiêu là sau khóa học là  : có thể đi làm hoặc ít nhất có thể đi thực tập dc về lập trình web </p>
+                    <p>Họ và tên : Đoàn Tiến Đạt</p>
+                    <p>năm sinh: 1998</p>
+                    <p>trường : đại học kinh doanh và công nghệ Hà Nội</p>
+                    <p>mục tiêu : sau khi học xong có thể đi làm hoặc ít nhất là có thể thực tập</p>
                 </div>
             </div>
         </div>
